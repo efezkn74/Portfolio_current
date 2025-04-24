@@ -32,7 +32,7 @@ export default function Lebenslauf() {
         <div className="w-[460px] h-[640px] bg-[#0A1A20] bg-opacity-80 shadow-lg rounded-md p-4 flex items-center justify-center relative mt-3">
           <div className="w-full h-full rounded overflow-hidden">
             <iframe
-              src="/lebenslauf.pdf"
+              src="/Lebenslauforg.pdf"
               title="Lebenslauf PDF"
               className="w-full h-full rounded"
               style={{
@@ -43,7 +43,7 @@ export default function Lebenslauf() {
 
           {/* PDF-Download */}
           <a
-            href="/lebenslauf.pdf"
+            href="/Lebenslauforg.pdf"
             download
             className="absolute bottom-2 right-2 bg-[#143340] text-white px-3 py-1 text-sm rounded flex items-center gap-2 hover:bg-gray-200 hover:text-black transition"
           >
