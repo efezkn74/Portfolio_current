@@ -103,7 +103,6 @@ export default function fertigkeiten() {
 {/* Kontaktinfos unten */}
 <div className="mt-16 border-t border-gray-600 pt-6 text-sm text-gray-300 text-center">
   <p>E-Mail: <a href="mailto:efe.oezkan@web.de" className="text-cyan-300 hover:underline">efe.oezkan@web.de</a></p>
-  <p>Telefon: <a href="tel:+4917641624836" className="text-cyan-300 hover:underline">+49 176 41624836</a></p>
 </div>
 
       </div>
