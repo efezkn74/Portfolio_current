@@ -22,7 +22,7 @@ export default function LoginForm() {
     if (response.ok) {
       handleLogin();
     } else {
-      setError('Falscher Benutzername oder Passwort.');
+      setError('Falscher Benutzername oder Passwort.  ');
     }
   };
 
