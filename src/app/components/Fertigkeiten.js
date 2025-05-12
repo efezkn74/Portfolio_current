@@ -10,7 +10,7 @@ export default function fertigkeiten() {
         { name: 'C#', rating: 4.5 },
         { name: 'Java', rating: 4.5 },
         { name: 'JavaScript', rating: 4 },
-        { name: 'React Native', rating: 3.5 },
+        { name: 'React', rating: 3.5 },
         { name: 'C', rating: 3.5 },
         { name: 'SQL', rating:  3.5},
         { name: 'C++', rating: 3 },

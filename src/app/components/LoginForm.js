@@ -22,30 +22,35 @@ export default function LoginForm() {
     if (response.ok) {
       handleLogin();
     } else {
-      setError('Falscher Benutzername oder Passwort.  ');
+      setError('Falscher Benutzername oder Passwort.');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
-      <input
-        type="text"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        placeholder="Benutzername"
-        className="p-2 rounded text-black w-72"
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Passwort"
-        className="p-2 rounded text-black w-72"
-      />
-      <button type="submit" className="bg-blue-600 px-4 py-2 rounded text-white">
-        Login
-      </button>
-      {error && <p className="text-red-400">{error}</p>}
-    </form>
+    <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg border border-gray-300 w-full max-w-sm">
+      <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
+        <h2 className="text-xl font-semibold text-gray-800">Login</h2>
+
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Benutzername"
+          className="p-2 rounded border border-gray-300 text-black w-full"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Passwort"
+          className="p-2 rounded border border-gray-300 text-black w-full"
+        />
+        <button type="submit" className="bg-[#0A1A20] px-4 py-2 rounded text-white w-full">
+          Login
+        </button>
+
+        {error && <p className="text-red-500">{error}</p>}
+      </form>
+    </div>
   );
 }
